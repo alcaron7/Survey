@@ -1,0 +1,12 @@
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\bin\Debug\net9.0\GestDev.Core.deps.json
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\bin\Debug\net9.0\GestDev.Core.dll
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\bin\Debug\net9.0\GestDev.Core.pdb
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\GestDev.Core.csproj.AssemblyReference.cache
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\GestDev.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\GestDev.Core.AssemblyInfoInputs.cache
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\GestDev.Core.AssemblyInfo.cs
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\GestDev.Core.csproj.CoreCompileInputs.cache
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\GestDev.Core.dll
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\refint\GestDev.Core.dll
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\GestDev.Core.pdb
+C:\Users\acaro\Desktop\Projets\GestDev\server\src\GestDev.Core\obj\Debug\net9.0\ref\GestDev.Core.dll

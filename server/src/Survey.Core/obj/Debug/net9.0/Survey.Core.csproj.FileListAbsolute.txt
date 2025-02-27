@@ -1,0 +1,13 @@
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\bin\Debug\net9.0\Survey.Core.deps.json
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\bin\Debug\net9.0\Survey.Core.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\bin\Debug\net9.0\Survey.Core.pdb
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\Survey.Core.csproj.AssemblyReference.cache
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\Survey.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\Survey.Core.AssemblyInfoInputs.cache
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\Survey.Core.AssemblyInfo.cs
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\Survey.Core.csproj.CoreCompileInputs.cache
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\Survey.Core.sourcelink.json
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\Survey.Core.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\refint\Survey.Core.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\Survey.Core.pdb
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Core\obj\Debug\net9.0\ref\Survey.Core.dll

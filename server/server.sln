@@ -5,13 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestDev.Core", "src\GestDev.Core\GestDev.Core.csproj", "{4FB2CA97-C859-4687-8D96-FD9A5B7C85F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Survey.Core", "src\Survey.Core\Survey.Core.csproj", "{4FB2CA97-C859-4687-8D96-FD9A5B7C85F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestDev.Infrastructure", "src\GestDev.Infrastructure\GestDev.Infrastructure.csproj", "{E95D8ED0-C6FC-47FB-919E-A2E47726E956}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Survey.Infrastructure", "src\Survey.Infrastructure\Survey.Infrastructure.csproj", "{E95D8ED0-C6FC-47FB-919E-A2E47726E956}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestDev.Api", "src\GestDev.Api\GestDev.Api.csproj", "{03A6FEA3-4F37-462A-8E54-A3F581BEDE8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Survey.Api", "src\Survey.Api\Survey.Api.csproj", "{03A6FEA3-4F37-462A-8E54-A3F581BEDE8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestDev.Application", "src\GestDev.Application\GestDev.Application.csproj", "{0EFD4BBF-35D9-4CE9-AE9D-618E93F1BDFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Survey.Application", "src\Survey.Application\Survey.Application.csproj", "{0EFD4BBF-35D9-4CE9-AE9D-618E93F1BDFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

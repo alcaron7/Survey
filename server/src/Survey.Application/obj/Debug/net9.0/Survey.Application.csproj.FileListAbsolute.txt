@@ -1,0 +1,16 @@
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\bin\Debug\net9.0\Survey.Application.deps.json
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\bin\Debug\net9.0\Survey.Application.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\bin\Debug\net9.0\Survey.Application.pdb
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\bin\Debug\net9.0\Survey.Core.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\bin\Debug\net9.0\Survey.Core.pdb
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.Application.csproj.AssemblyReference.cache
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.Application.AssemblyInfoInputs.cache
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.Application.AssemblyInfo.cs
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.Application.csproj.CoreCompileInputs.cache
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.Application.sourcelink.json
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.A.9820C681.Up2Date
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.Application.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\refint\Survey.Application.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\Survey.Application.pdb
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Application\obj\Debug\net9.0\ref\Survey.Application.dll

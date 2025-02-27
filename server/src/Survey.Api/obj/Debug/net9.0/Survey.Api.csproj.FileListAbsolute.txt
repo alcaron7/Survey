@@ -161,10 +161,12 @@ C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\sta
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Survey.Api.props
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Survey.Api.props
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\Survey.Api.csproj.Up2Date
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\Survey.Api.dll
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\refint\Survey.Api.dll
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\Survey.Api.pdb
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\Survey.Api.genruntimeconfig.cache
 C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\ref\Survey.Api.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\acaro\Desktop\Projets\Survey\server\src\Survey.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

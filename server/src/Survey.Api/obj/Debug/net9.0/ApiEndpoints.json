@@ -1,5 +1,57 @@
 [
   {
+    "ContainingType": "Survey.Api.Controllers.LoginController",
+    "Method": "LoginUser",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequestDTO",
+        "Type": "Survey.Application.DTOs.Login.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Survey.Application.DTOs.Login.LoginReplyDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Survey.Api.Controllers.LoginController",
+    "Method": "CreateHash",
+    "RelativePath": "api/Login/createHash",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Survey.Api.Controllers.UsersController",
     "Method": "CreateUser",
     "RelativePath": "api/Users",

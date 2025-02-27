@@ -20,8 +20,6 @@ namespace Survey.Infrastructure.Data.Repositories
 
         public async Task<User> AddAsync(User user)
         {
-            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
             return user;
@@ -30,6 +28,11 @@ namespace Survey.Infrastructure.Data.Repositories
         public async Task<bool> EmailAlreadyExists(string email)
         {
             return await _context.Users.AnyAsync(u => u.Email == email);
+        }
+
+        public async Task<User> GetByEmailAsync(string email)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
         }
     }
 }

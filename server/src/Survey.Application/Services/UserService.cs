@@ -14,10 +14,12 @@ namespace Survey.Core.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _repository;
+        private readonly IPasswordHasher _passwordHasher;
 
-        public UserService(IUserRepository repository)
+        public UserService(IUserRepository repository, IPasswordHasher password)
         {
             _repository = repository;
+            _passwordHasher = password;
         }
 
         public async Task<User> CreateUser(CreateUserDTO userDto)
@@ -27,7 +29,7 @@ namespace Survey.Core.Services
                 Id = Guid.NewGuid(),
                 Name = userDto.Name,
                 Email = userDto.Email,
-                Password = BCrypt.Net.BCrypt.HashPassword(userDto.Password),
+                Password = _passwordHasher.HashPassword(userDto.Password),
                 CreatedAt = DateTime.UtcNow
             };
 

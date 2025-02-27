@@ -11,5 +11,6 @@ namespace Survey.Core.Interfaces
     {
         Task<User> AddAsync(User user);
         Task<bool> EmailAlreadyExists(string email);
+        Task<User> GetByEmailAsync(string email);
     }
 }

@@ -1,18 +1,18 @@
-import { useState } from "react"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Loader2 } from "lucide-react"
-import { z } from "zod"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Loader2 } from "lucide-react";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Form,
   FormControl,
@@ -20,21 +20,19 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
-import { useNavigate } from "react-router-dom"
-import axios from "axios"
+} from "@/components/ui/form";
+import { useNavigate } from "react-router-dom";
+import authService from "@/services/auth.service";
 
-// Définir le schéma de validation
 const formSchema = z.object({
   email: z.string().email({ message: "Adresse courriel invalide" }).min(1, { message: "Adresse courriel requise" }),
   password: z.string().min(1, { message: "Mot de passe requis" }),
-})
+});
 
-// Type pour notre formulaire basé sur le schéma
-type FormValues = z.infer<typeof formSchema>
+type FormValues = z.infer<typeof formSchema>;
 
 interface LoginFormProps extends React.ComponentPropsWithoutRef<"div"> {
-  onLoginSuccess?: (token: string) => void;
+  onLoginSuccess?: (accessToken: string, refreshToken: string) => void;
 }
 
 export function LoginForm({
@@ -42,66 +40,54 @@ export function LoginForm({
   onLoginSuccess,
   ...props
 }: LoginFormProps) {
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const navigate = useNavigate()
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const navigate = useNavigate();
 
-  // Initialiser le formulaire avec react-hook-form et zodResolver
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       email: "",
       password: "",
     },
-  })
+  });
 
-  // Gestionnaire de soumission du formulaire
   const onSubmit = async (data: FormValues) => {
-    setIsLoading(true)
-    setError(null)
+    setIsLoading(true);
+    setError(null);
     
     try {
-      const response = await axios.post('https://localhost:7087/api/login', {
-        email: data.email,
-        password: data.password
-      })
+      const response = await authService.login(data.email, data.password);
       
-      // Vérifier que nous avons bien reçu un token
-      if (response.data && response.data.jwtToken) {
-        // Appeler le callback avec le token
+      if (response && response.accessToken && response.refreshToken) {
         if (onLoginSuccess) {
-          onLoginSuccess(response.data.jwtToken)
+          onLoginSuccess(response.accessToken, response.refreshToken);
         }
         
-        // Rediriger vers le tableau de bord
-        navigate('/dashboard')
+        navigate('/dashboard');
       } else {
-        setError("Format de réponse invalide")
+        setError("Format de réponse invalide");
       }
     } catch (error: any) {
-      console.error('Erreur de connexion:', error)
+      console.error('Erreur de connexion:', error);
       
-      // Gestion des différents types d'erreurs
       if (error.response) {
-        // Le serveur a répondu avec un statut d'erreur
         if (error.response.status === 401) {
-          setError("Identifiants incorrects")
+          setError("Identifiants incorrects");
         } else if (error.response.status === 400) {
-          setError("Données invalides")
+          setError("Données invalides");
         } else {
-          setError(`Erreur du serveur: ${error.response.status}`)
+          setError(`Erreur du serveur: ${error.response.status}`);
         }
       } else if (error.request) {
-        // Pas de réponse reçue
-        setError("Impossible de joindre le serveur")
+        setError("Impossible de joindre le serveur");
       } else {
-        // Erreur lors de la configuration de la requête
-        setError(`Erreur: ${error.message}`)
+        setError(`Erreur: ${error.message}`);
       }
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
@@ -177,5 +163,5 @@ export function LoginForm({
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }

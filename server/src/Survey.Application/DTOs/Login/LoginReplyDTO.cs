@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace Survey.Application.DTOs.Login
 {
-    public class LoginReplyDTO
+    public record LoginReplyDTO
     {
-        public string JwtToken { get; set; }
-        public string RefreshToken { get; set; }
+        public string AccessToken { get; init; }
+        public string RefreshToken { get; init; }
+        public DateTime Expiration { get; init; }
+        public string TokenType { get; init; } = "Bearer";
 
-        public LoginReplyDTO(string jwtToken, string refreshToken)
+        public LoginReplyDTO(string accessToken, string refreshToken)
+            : this(accessToken, refreshToken, DateTime.Now.AddMinutes(60))
         {
-            JwtToken = jwtToken;
+        }
+
+        public LoginReplyDTO(string accessToken, string refreshToken, DateTime expiration)
+        {
+            AccessToken = accessToken;
             RefreshToken = refreshToken;
+            Expiration = expiration;
         }
     }
 }

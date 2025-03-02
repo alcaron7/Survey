@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Survey.Application.DTOs.Login
 {
-    public class LoginRequestDTO
+    public record LoginRequestDTO
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public string Email { get; init; }
+        public string Password { get; init; }
     }
 }
